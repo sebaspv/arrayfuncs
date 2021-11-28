@@ -8,4 +8,4 @@ cppyy.include("arrayfuncs.cpp") # load arrayfuncs
 cppyy.load_library("arrayfuncs")
 from cppyy.gbl import Array # arrayfuncs is loaded succesfully
 example_array = Array(10) # create a vector with a length of 10
-print("Generate vector with zeros", example_array.zeros())
+print("Generate vector with zeros", list(example_array.zeros())) # the vector gets created succesfully!

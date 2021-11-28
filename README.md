@@ -7,6 +7,10 @@ You can find code snippets about the available functions from the `example.py` a
 ## Setup
 You need to compile `arrayfuncs.cpp` with g++ in order to make the python file work correctly. If you, for no reason whatsoever want to use this library, you need to clone this repo and add your python files in the same directory as `arrayfuncs.cpp`. You also need to install `cppyy` in order to transform C++ to Python.
 ```
+# compile the C++ library
+g++ -c -o arrayfuncs.o arrayfuncs.cpp
+g++ -shared -o arrayfuncs.o arrayfuncs.so
+# add library to python
 pip3 install cppyy
 python3 example.py
 ```

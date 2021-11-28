@@ -17,5 +17,11 @@ int main() {
       std::cout<< MyArray.zeros().at(i).at(j); // print all of the zeros
     }
   }
+
+  for (int i = 0; i < MyArray.ones().size(); i++) {
+    for (int j = 0; j < MyArray.ones().at(i).size(); j++) {
+      std::cout<< MyArray.ones().at(i).at(j); // print all of the ones
+    }
+  }
   return 0;
 }

@@ -13,3 +13,15 @@ std::vector<std::vector<int>> Array::zeros(){
     }
     return FinalVector;
 }
+
+std::vector<std::vector<int>> Array::ones(){
+    std::vector<std::vector<int>> FinalVector;
+    for(int i = 0; i<Array::y; i++){
+        std::vector<int> AddedVector;
+        for(int j = 0; j<Array::x; j++){
+            AddedVector.push_back(1);
+        }
+        FinalVector.push_back(AddedVector);
+    }
+    return FinalVector;
+}
